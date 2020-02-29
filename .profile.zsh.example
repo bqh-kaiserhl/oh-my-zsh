@@ -1,0 +1,16 @@
+PROFILE_USER=
+
+export PATH_ALL="${HOME}/all"
+export PATH_SL="${PATH_ALL}/sl"
+export PATH_USER="${PATH_ALL}/personal/${PROFILE_USER}"
+
+export TMUXINATOR_CONFIG=${PATH_USER}/.tmuxinator
+
+ZSH_PATH=${PATH_USER}/dev/oh-my-zsh/
+
+export PATH_CODE="${PATH_ALL}/lin.he/code"
+
+alias all="cd $PATH_ALL"
+alias code="cd $PATH_CODE"
+
+alias vi='/usr/local/bin/vim -b'
