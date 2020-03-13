@@ -90,12 +90,35 @@ HIST_STAMPS="mm/dd/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# https://github.com/ohmyzsh/ohmyzsh/issues/5651
+ZSH_DISABLE_COMPFIX=true
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git cp zsh-syntax-highlighting python command-not-found docker tmux tmuxinator)
+plugins=(
+  python pylint golang zsh-syntax-highlighting npm pip
+
+  cp command-not-found httpie pass jsontools urltools encode64 nmap torrent debian
+  man chucknorris postgres profiles ripgrep redis-cli rsync
+  systemadmin
+
+  git tmux tmuxinator github
+
+  docker docker-compose terraform vagrant kubectl minikube
+  aws gcloud
+
+  vi-mode zsh_reload
+)
+
+# // vi-mode
+# bindkey -lL | grep main
+
+ZSH_TMUX_AUTOSTART=false
+ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_FIXTERM=true
 
 source $ZSH/oh-my-zsh.sh
 
