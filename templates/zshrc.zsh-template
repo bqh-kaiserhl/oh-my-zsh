@@ -110,10 +110,8 @@ plugins=(
   docker docker-compose terraform vagrant kubectl minikube
   aws gcloud
 
-  vi-mode zsh_reload
+  zsh_reload
 )
-
-# // vi-mode
 # bindkey -lL | grep main
 
 ZSH_TMUX_AUTOSTART=false
