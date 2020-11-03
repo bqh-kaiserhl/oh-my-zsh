@@ -110,7 +110,7 @@ plugins=(
   docker docker-compose terraform vagrant kubectl minikube
   aws gcloud
 
-  vi-mode
+  vi-mode zsh-vimode-visual
 
   zsh_reload
 )
@@ -171,7 +171,7 @@ export QEMU=qemu-system-i386
 ########################################
 export PATH="${HOME}/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	# uses macports installation dirs
+  # uses macports installation dirs
   export PATH="/opt/local/bin:$PATH"
 fi
 
