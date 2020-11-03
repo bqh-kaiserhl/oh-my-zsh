@@ -110,6 +110,8 @@ plugins=(
   docker docker-compose terraform vagrant kubectl minikube
   aws gcloud
 
+  vi-mode
+
   zsh_reload
 )
 # bindkey -lL | grep main
