@@ -1,3 +1,6 @@
 [submodule "plugins/zsh-syntax-highlighting"]
 	path = plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "custom/plugins/zsh-vimode-visual"]
+	path = custom/plugins/zsh-vimode-visual
+	url = https://github.com/b4b4r07/zsh-vimode-visual.git
