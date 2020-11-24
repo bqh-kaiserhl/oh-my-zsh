@@ -17,6 +17,7 @@ setopt SHARE_HISTORY
 setopt HIST_IGNORE_SPACE
 setopt HIST_IGNORE_ALL_DUPS
 setopt EXTENDED_HISTORY
+setopt PROMPT_SUBST
 
 unsetopt PROMPT_SP
 unsetopt CORRECT
@@ -110,7 +111,7 @@ plugins=(
   docker docker-compose terraform vagrant kubectl minikube
   aws gcloud
 
-  vi-mode zsh-vimode-visual
+  zsh-vim-mode
 
   zsh_reload
 )
@@ -235,3 +236,21 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Settings for zsh-vim-mode
+# https://github.com/softmoth/zsh-vim-mode
+
+# Pressing <Esc><Esc> will then switch to NORMAL mode with no delay, every time.
+bindkey -rpM viins '^[^['
+
+RPS1='${MODE_INDICATOR_PROMPT} ${vcs_info_msg_0_}'
+
+KEYTIMEOUT=1
+VIM_MODE_ESC_PREFIXED_WANTED='bdfhul.g' # Default is 'bdf.g'
+
+MODE_INDICATOR_VIINS='%F{15}[INSERT]%f'
+MODE_INDICATOR_VICMD='%F{10}[NORMAL]%f'
+MODE_INDICATOR_REPLACE='%F{9}[REPLACE]%f'
+MODE_INDICATOR_SEARCH='%F{13}[SEARCH]%f'
+MODE_INDICATOR_VISUAL='%F{12}[VISUAL]%f'
+MODE_INDICATOR_VLINE='%F{12}[V-LINE]%f'

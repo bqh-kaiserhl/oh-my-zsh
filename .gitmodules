@@ -4,3 +4,6 @@
 [submodule "custom/plugins/zsh-vimode-visual"]
 	path = custom/plugins/zsh-vimode-visual
 	url = https://github.com/b4b4r07/zsh-vimode-visual.git
+[submodule "custom/plugins/zsh-vim-mode"]
+	path = custom/plugins/zsh-vim-mode
+	url = https://github.com/softmoth/zsh-vim-mode.git
