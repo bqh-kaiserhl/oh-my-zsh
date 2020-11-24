@@ -2,7 +2,13 @@ ZSH=${PWD}
 ZSH_TEMPLATE=${PWD}/templates/zshrc.zsh-template
 
 .PHONY: all
-all:
+all: prepare
+
+
+.PHONY: prepare
+prepare:
+	git submodule update --init --recursive
+
 
 .PHONY: install
 install:
