@@ -108,6 +108,8 @@ plugins=(
 
   git tmux tmuxinator github
 
+  history-substring-search
+
   docker docker-compose terraform vagrant kubectl minikube
   aws gcloud
 
